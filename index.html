@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Personal</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>Mi Portfolio Personal</h1>
+        <p>Desarrollador Web | Creativo | Estrategias de comunicacion</p>
+    </header>
+
+    <!-- Barra de navegación -->
+    <nav class="barra-de-navegacion">
+        <div class="enlaces-navegacion izquierda">
+            <a href="#sobre-mi">Sobre mí</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#contacto">Contacto</a>
+        </div>
+      
+    </nav>
+
+    <!-- Contenido principal -->
+    <main>
+        <!-- Sección Sobre mí -->
+        <section id="sobre-mi" class="box">
+            <h2>Sobre mí</h2>
+            <p>Hola, soy estudiante de Comunicación Digital con un enfoque en la experiencia del usuario. Utilizo mi conocimiento en código y creación de contenido para construir interfaces intuitivas que conecten con el público y transmitan el mensaje de manera efectiva..</p>
+        </section>
+
+        <!-- Sección Proyectos Destacados -->
+        <section id="proyectos" class="box">
+            <h2>Proyectos Destacados</h2>
+            <div class="proyectos-container">
+
+                <!-- Proyecto 1 -->
+                <div class="proyecto">
+                    <h3>Proyecto 1: Sitio E-commerce</h3>
+                    <div class="slider-container">
+                        <div class="slider-images">
+                            <img src="imagenes/proy1.jpeg" alt="Imagen 1">
+                            <img src="imagenes/proy 1.0.jpeg" alt="Imagen 2">
+                            <img src="imagenes/proy 1.1.jpeg" alt="Imagen 3">
+                        </div>
+                        <button class="slider-btn prev" data-proyecto="ecommerce">❮</button>
+                        <button class="slider-btn next" data-proyecto="ecommerce">❯</button>
+                    </div>
+                    <p>Desarrollé un sitio web de comercio electrónico con carrito de compras y pasarela de pagos.</p>
+                    <button class="btn-hover ver-mas-btn" data-proyecto="ecommerce">Ver más</button>
+                    <div class="proyecto-detalles" id="ecommerce">
+                        <p>Detalles adicionales sobre el proyecto E-commerce...</p>
+                        <ul>
+                            <li>Tecnologías utilizadas: HTML, CSS, JavaScript, React</li>
+                            <li>Enlace al proyecto: <a href="#">Ver proyecto</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Proyecto 2 -->
+                <div class="proyecto">
+                    <h3>Proyecto 2: Blog Personal</h3>
+                    <div class="slider-container">
+                        <div class="slider-images">
+                            <img src="imagenes/proy 2.0.jpeg" alt="Imagen 1">
+                            <img src="imagenes/proy 2.1.jpeg" alt="Imagen 2">
+                            <img src="imagenes/proy 2.2.jpeg" alt="Imagen 3">
+                        </div>
+                        <button class="slider-btn prev" data-proyecto="blog">❮</button>
+                        <button class="slider-btn next" data-proyecto="blog">❯</button>
+                    </div>
+                    <p>Creamos un blog dinámico utilizando tecnologías modernas como React y Node.js.</p>
+                    <button class="btn-hover ver-mas-btn" data-proyecto="blog">Ver más</button>
+                    <div class="proyecto-detalles" id="blog">
+                        <p>Detalles adicionales sobre el Blog Personal...</p>
+                        <ul>
+                            <li>Tecnologías utilizadas: React, Node.js, MongoDB</li>
+                            <li>Enlace al proyecto: <a href="#">Ver proyecto</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Proyecto 3 -->
+                <div class="proyecto">
+                    <h3>Proyecto 3: App Móvil de Recetas</h3>
+                    <div class="slider-container">
+                        <div class="slider-images">
+                            <img src="imagenes/proy 3.0.jpeg" alt="Imagen 1">
+                            <img src="imagenes/proy 3.1.jpeg" alt="Imagen 2">
+                            <img src="imagenes/proy 3.jpeg" alt="Imagen 3">
+                        </div>
+                        <button class="slider-btn prev" data-proyecto="recetas">❮</button>
+                        <button class="slider-btn next" data-proyecto="recetas">❯</button>
+                    </div>
+                    <p>Desarrollé una app móvil para compartir recetas de cocina.</p>
+                    <button class="btn-hover ver-mas-btn" data-proyecto="recetas">Ver más</button>
+                    <div class="proyecto-detalles" id="recetas">
+                        <p>Detalles adicionales sobre la App de Recetas...</p>
+                        <ul>
+                            <li>Tecnologías utilizadas: React Native, Firebase</li>
+                            <li>Enlace al proyecto: <a href="#">Ver proyecto</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Proyecto 4 -->
+                <div class="proyecto">
+                    <h3>Proyecto 4: Landing Page Profesional</h3>
+                    <div class="slider-container">
+                        <div class="slider-images">
+                            <img src="imagenes/proy 4.0.jpeg" alt="Imagen 1">
+                            <img src="imagenes/proy 4.1.jpeg" alt="Imagen 2">
+                            <img src="imagenes/proy 4.jpeg" alt="Imagen 3">
+                        </div>
+                        <button class="slider-btn prev" data-proyecto="landing">❮</button>
+                        <button class="slider-btn next" data-proyecto="landing">❯</button>
+                    </div>
+                    <p>Diseñé una landing page para una empresa de consultoría.</p>
+                    <button class="btn-hover ver-mas-btn" data-proyecto="landing">Ver más</button>
+                    <div class="proyecto-detalles" id="landing">
+                        <p>Detalles adicionales sobre la Landing Page...</p>
+                        <ul>
+                            <li>Tecnologías utilizadas: HTML, CSS, JavaScript</li>
+                            <li>Enlace al proyecto: <a href="#">Ver proyecto</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Preguntas Frecuentes -->
+        <section id="preguntas-frecuentes" class="box">
+            <h2>Preguntas Frecuentes</h2>
+            <div class="pregunta">
+                <button class="pregunta-btn">¿Cuál es tu experiencia en desarrollo web?</button>
+                <div class="respuesta">
+                    <p>Tengo más de 5 años de experiencia en desarrollo web, trabajando con diversas tecnologías como HTML, CSS, JavaScript, React, Node.js, y bases de datos como MongoDB y Firebase.</p>
+                </div>
+            </div>
+            <div class="pregunta">
+                <button class="pregunta-btn">¿Cómo puedo contactarte para un proyecto?</button>
+                <div class="respuesta">
+                    <p>Puedes contactarme a través del formulario en la sección de Contacto o enviarme un correo electrónico a [tu correo electrónico].</p>
+                </div>
+            </div>
+        </div>
+        <div class="pregunta">
+            <button class="pregunta-btn">¿Qué herramientas utilizas para diseñar y desarrollar proyectos?</button>
+            <div class="respuesta">
+                <p>Utilizo una combinación de herramientas según las necesidades del proyecto. Para diseño visual, empleo Figma o Adobe XD. En el desarrollo, trabajo con HTML, CSS y JavaScript para el front-end, mientras que para el back-end suelo usar Node.js o Firebase. Además, utilizo Git y GitHub para el control de versiones y la colaboración en equipo.</p>
+            </div>
+        </div>
+    </div>
+    <div class="pregunta">
+        <button class="pregunta-btn"> ¿Cómo aseguras que un sitio web sea accesible y responsivo?</button>
+        <div class="respuesta">
+            <p>Me aseguro de que todos los sitios web que desarrollo sean accesibles siguiendo las pautas de accesibilidad WCAG. Esto incluye el uso de etiquetas semánticas en HTML, textos alternativos en imágenes y un diseño que funcione bien con lectores de pantalla. Para la responsividad, utilizo técnicas como media queries en CSS y frameworks como Bootstrap para garantizar que el sitio se adapte a cualquier dispositivo o resolución.</p>
+        </div>
+    </div>
+        </section>
+
+        <!-- Sección Contactame (ancho completo) -->
+        <section id="contacto" class="box contacto-box">
+            <h2>Contacto</h2>
+            <p>¿Te interesa trabajar conmigo? ¡Escríbeme!</p>
+            <button id="contactarBtn" class="btn-hover">Contactar</button>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2025 [Guadalupe Fernandez Padua]. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+
+</html>

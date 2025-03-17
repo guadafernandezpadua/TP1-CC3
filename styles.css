@@ -1,0 +1,176 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado */
+header {
+    text-align: center;
+    background-color: lightpink;
+    color: white;
+    padding: 20px;
+}
+
+/* Barra de navegación */
+.barra-de-navegacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: beige;
+    color: white;
+    padding: 10px 20px;
+  
+}
+
+.enlaces-navegacion a {
+    color: black;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.enlaces-navegacion a:hover {
+    text-decoration: underline;
+}
+
+/* Logo */
+.logo img {
+    height: 40px;
+}
+
+/* Boxes */
+.box {
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Proyectos Container */
+.proyectos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.proyecto {
+    width: 45%;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center; /* Alineación central del contenido */
+}
+
+/* Hover para imágenes */
+.foto-hover:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Botones con efecto hover */
+.btn-hover {
+    background-color: #d36fbc;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-hover:hover {
+    background-color: #d36fbc;
+}
+
+/* Estilos para los detalles del proyecto (ocultos inicialmente) */
+.proyecto-detalles {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+}
+
+/* Sección Preguntas Frecuentes */
+.pregunta {
+    margin-bottom: 10px;
+}
+
+.pregunta-btn {
+    background-color: #d36fbc;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+}
+
+.pregunta-btn:hover {
+    background-color: #d36fbc;
+}
+
+.respuesta {
+    display: none;
+    padding: 10px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+}
+
+/* Sección Contacto */
+.contacto-box {
+    width: 100%;
+    text-align: center;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    background-color: beige;
+    color: black;
+    padding: 10px;
+}
+
+/* Estilos del Slider */
+.slider-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider-images img {
+    width: 100%;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.slider-btn.prev {
+    left: 0;
+}
+
+.slider-btn.next {
+    right: 0;
+}
+
